@@ -13,7 +13,7 @@ uv sync
 
 ## Configuration
 
-Check the environment variables in [env local](./env%20local)
+Check the environment variables in [env local](./.env%20local)
 
 You will need at least an OpenAI API key (Go to https://platform.openai.com/api-keys) and a Serp API (Go to https://serpapi.com/dashboard) key as well as a Hugging Face token which you can get from https://huggingface.co/settings/tokens
 
