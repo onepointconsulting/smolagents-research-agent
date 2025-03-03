@@ -1,0 +1,16 @@
+[project]
+name = "research-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-search-results>=2.4.2",
+    "mammoth>=1.9.0",
+    "pathvalidate>=3.2.3",
+    "pydub>=0.25.1",
+    "python-dotenv>=1.0.1",
+    "smolagents[gradio,litellm]>=1.9.2",
+    "transformers>=4.49.0",
+    "youtube-transcript-api>=0.6.3",
+]
