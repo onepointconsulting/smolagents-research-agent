@@ -1092,6 +1092,15 @@ wheels = [
 ]
 
 [[package]]
+name = "puremagic"
+version = "1.28"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/09/2d/40599f25667733e41bbc3d7e4c7c36d5e7860874aa5fe9c584e90b34954d/puremagic-1.28.tar.gz", hash = "sha256:195893fc129657f611b86b959aab337207d6df7f25372209269ed9e303c1a8c0", size = 314945 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c5/53/200a97332d10ed3edd7afcbc5f5543920ac59badfe5762598327999f012e/puremagic-1.28-py3-none-any.whl", hash = "sha256:e16cb9708ee2007142c37931c58f07f7eca956b3472489106a7245e5c3aa1241", size = 43241 },
+]
+
+[[package]]
 name = "pycparser"
 version = "2.22"
 source = { registry = "https://pypi.org/simple" }
@@ -1346,6 +1355,7 @@ dependencies = [
     { name = "pathvalidate" },
     { name = "pdfminer" },
     { name = "pdfminer-six" },
+    { name = "puremagic" },
     { name = "pydub" },
     { name = "python-dotenv" },
     { name = "python-pptx" },
@@ -1361,6 +1371,7 @@ requires-dist = [
     { name = "pathvalidate", specifier = ">=3.2.3" },
     { name = "pdfminer", specifier = ">=20191125" },
     { name = "pdfminer-six", specifier = ">=20240706" },
+    { name = "puremagic", specifier = ">=1.28" },
     { name = "pydub", specifier = ">=0.25.1" },
     { name = "python-dotenv", specifier = ">=1.0.1" },
     { name = "python-pptx", specifier = ">=1.0.2" },
