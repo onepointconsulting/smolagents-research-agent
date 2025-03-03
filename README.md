@@ -4,7 +4,7 @@ Small research agent based on the deep reasearch agent from [Smolagents](https:/
 
 ## Installation
 
-This project requires uv to be installed.
+This project requires (uv)[https://github.com/astral-sh/uv] to be installed.
 
 ```bash
 uv sync
