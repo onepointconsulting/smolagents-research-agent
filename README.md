@@ -7,8 +7,10 @@ Small research agent based on the deep reasearch agent from [Smolagents](https:/
 This project requires [uv](https://github.com/astral-sh/uv) to be installed.
 
 ```bash
+uv venv
+source .venv/bin/activate
+# .venv\Scripts\activate
 uv sync
-.venv\Scripts\activate
 ```
 
 ## Configuration
@@ -26,5 +28,5 @@ We have tested this agent with o1 and it works relatively well with it.
 You can run the server using 
 
 ```bash
-uv run .\app.py
+uv run ./app.py
 ```
