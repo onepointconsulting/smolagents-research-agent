@@ -1360,6 +1360,7 @@ dependencies = [
     { name = "python-dotenv" },
     { name = "python-pptx" },
     { name = "smolagents", extra = ["gradio", "litellm"] },
+    { name = "speechrecognition" },
     { name = "transformers" },
     { name = "youtube-transcript-api" },
 ]
@@ -1376,6 +1377,7 @@ requires-dist = [
     { name = "python-dotenv", specifier = ">=1.0.1" },
     { name = "python-pptx", specifier = ">=1.0.2" },
     { name = "smolagents", extras = ["gradio", "litellm"], specifier = ">=1.9.2" },
+    { name = "speechrecognition", specifier = ">=3.14.1" },
     { name = "transformers", specifier = ">=4.49.0" },
     { name = "youtube-transcript-api", specifier = ">=0.6.3" },
 ]
@@ -1570,6 +1572,42 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/d7/ce/fbaeed4f9fb8b2daa961f90591662df6a86c1abf25c548329a86920aedfb/soupsieve-2.6.tar.gz", hash = "sha256:e2e68417777af359ec65daac1057404a3c8a5455bb8abc36f1a9866ab1a51abb", size = 101569 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d1/c2/fe97d779f3ef3b15f05c94a2f1e3d21732574ed441687474db9d342a7315/soupsieve-2.6-py3-none-any.whl", hash = "sha256:e72c4ff06e4fb6e4b5a9f0f55fe6e81514581fca1515028625d0f299c602ccc9", size = 36186 },
+]
+
+[[package]]
+name = "speechrecognition"
+version = "3.14.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "audioop-lts", marker = "python_full_version >= '3.13'" },
+    { name = "standard-aifc", marker = "python_full_version >= '3.13'" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/e2/da/05607641a8db8fcc6898016fde7ea9b2e42d87cd1a1a275f0505a13389d8/speechrecognition-3.14.1.tar.gz", hash = "sha256:c767f8558e111a65e9a56905b04eaec2331f87d5011379381621f47aded6c4fe", size = 32858706 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/09/47/5dcfcd8a2c8c2981986fc196e98fc57bc1ecb5233b2d54dac0c0d448b019/SpeechRecognition-3.14.1-py3-none-any.whl", hash = "sha256:2b5d16a7dce2dbf5f90d9c4d5aefe96325518abdc963059ec16dad9e4f2c09d3", size = 32853180 },
+]
+
+[[package]]
+name = "standard-aifc"
+version = "3.13.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "audioop-lts", marker = "python_full_version >= '3.13'" },
+    { name = "standard-chunk", marker = "python_full_version >= '3.13'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c4/53/6050dc3dde1671eb3db592c13b55a8005e5040131f7509cef0215212cb84/standard_aifc-3.13.0.tar.gz", hash = "sha256:64e249c7cb4b3daf2fdba4e95721f811bde8bdfc43ad9f936589b7bb2fae2e43", size = 15240 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c3/52/5fbb203394cc852334d1575cc020f6bcec768d2265355984dfd361968f36/standard_aifc-3.13.0-py3-none-any.whl", hash = "sha256:f7ae09cc57de1224a0dd8e3eb8f73830be7c3d0bc485de4c1f82b4a7f645ac66", size = 10492 },
+]
+
+[[package]]
+name = "standard-chunk"
+version = "3.13.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/43/06/ce1bb165c1f111c7d23a1ad17204d67224baa69725bb6857a264db61beaf/standard_chunk-3.13.0.tar.gz", hash = "sha256:4ac345d37d7e686d2755e01836b8d98eda0d1a3ee90375e597ae43aaf064d654", size = 4672 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7a/90/a5c1084d87767d787a6caba615aa50dc587229646308d9420c960cb5e4c0/standard_chunk-3.13.0-py3-none-any.whl", hash = "sha256:17880a26c285189c644bd5bd8f8ed2bdb795d216e3293e6dbe55bbd848e2982c", size = 4944 },
 ]
 
 [[package]]
